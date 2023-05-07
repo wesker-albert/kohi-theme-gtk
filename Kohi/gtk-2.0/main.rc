@@ -1,195 +1,232 @@
 style "default" {
-  base[ACTIVE]                                      = @base_active # list active bg
-  base[INSENSITIVE]                                 = @base_deactivated # deactivated entry & check/radio bg
-  base[NORMAL]                                      = @bg_medium # entry, list, treeview bg
-  base[PRELIGHT]                                    = @base_deactivated # link & check/radio hover bg
-  base[SELECTED]                                    = @base_selected # entry and list selected bg; progress fill
+  base[ACTIVE]                                        = @base_active # list active bg
+  base[INSENSITIVE]                                   = @base_deactivated # deactivated entry & check/radio bg
+  base[NORMAL]                                        = @bg_medium # entry, list, treeview bg
+  base[PRELIGHT]                                      = @base_deactivated # link & check/radio hover bg
+  base[SELECTED]                                      = @base_selected # entry and list selected bg; progress fill
 
-  bg[ACTIVE]                                        = @bg_medium # active button & tab bg; scrollbar trough bg; sliber bg; inactive tab button bg
-  bg[INSENSITIVE]                                   = @bg_deactivated # deactivated button & combo bg; all of deactivated slider bg
-  bg[NORMAL]                                        = @bg_dark # window, tab, button, combo, menu+item bg; scrollbar handle bg; empty progress trough bg
-  bg[PRELIGHT]                                      = @bg_hover # hover bg for nearly everything
-  bg[SELECTED]                                      = @bg_progress_fill # treeview progress fill color
+  bg[ACTIVE]                                          = @bg_medium # active button & tab bg; scrollbar trough bg; sliber bg; inactive tab button bg
+  bg[INSENSITIVE]                                     = @bg_deactivated # deactivated button & combo bg; all of deactivated slider bg
+  bg[NORMAL]                                          = @bg_dark # window, tab, button, combo, menu+item bg; scrollbar handle bg; empty progress trough bg
+  bg[PRELIGHT]                                        = @bg_hover # hover bg for nearly everything
+  bg[SELECTED]                                        = @bg_progress_fill # treeview progress fill color
 
-  fg[ACTIVE]                                        = @fg_normal # active button & check/radio label; active tree radio border; inactive tab label
-  fg[INSENSITIVE]                                   = @fg_deactivated # deactivated button, check/radio label, and labels; deactivated slider numbers
-  fg[NORMAL]                                        = @fg_normal # labels for everything, except entries; tree header and progress labels; tree radio borders
-  fg[PRELIGHT]                                      = @fg_hover # hover labels for everything; progress fill text
-  fg[SELECTED]                                      = @fg_progress_fill # treeview progress fill text; tree view radio border for selected line
+  fg[ACTIVE]                                          = @fg_normal # active button & check/radio label; active tree radio border; inactive tab label
+  fg[INSENSITIVE]                                     = @fg_deactivated # deactivated button, check/radio label, and labels; deactivated slider numbers
+  fg[NORMAL]                                          = @fg_normal # labels for everything, except entries; tree header and progress labels; tree radio borders
+  fg[PRELIGHT]                                        = @fg_hover # hover labels for everything; progress fill text
+  fg[SELECTED]                                        = @fg_progress_fill # treeview progress fill text; tree view radio border for selected line
 
-  text[ACTIVE]                                      = @fg_normal # active selected entry and list text; active treview text; active check/radio fill
-  text[INSENSITIVE]                                 = @fg_deactivated # deativated combo, entry, and treeview text; deactivated check/radio fill
-  text[NORMAL]                                      = @fg_normal # entry, combo, treeview text; check and radio fill
-  text[PRELIGHT]                                    = @fg_light # combo hover text
-  text[SELECTED]                                    = @fg_light # selected entry, list, tree text; selected treeview radio border
+  text[ACTIVE]                                        = @fg_normal # active selected entry and list text; active treview text; active check/radio fill
+  text[INSENSITIVE]                                   = @fg_deactivated # deativated combo, entry, and treeview text; deactivated check/radio fill
+  text[NORMAL]                                        = @fg_normal # entry, combo, treeview text; check and radio fill
+  text[PRELIGHT]                                      = @fg_light # combo hover text
+  text[SELECTED]                                      = @fg_light # selected entry, list, tree text; selected treeview radio border
 
-  GnomeHRef::link_color                             = @link
-  GtkHTML::link-color                               = @link
-  GtkIMHtml::hyperlink-color                        = @link
-  GtkIMHtmlr::hyperlink-color                       = @link
-  GtkWidget::link-color                             = @link
-  GtkWidget::visited-link-color                     = @link_visited
+  GnomeHRef::link_color                               = @link
+  GtkHTML::link-color                                 = @link
+  GtkIMHtml::hyperlink-color                          = @link
+  GtkIMHtmlr::hyperlink-color                         = @link
+  GtkWidget::link-color                               = @link
+  GtkWidget::visited-link-color                       = @link_visited
 
-  xthickness                                        = 3
-  ythickness                                        = 3
+  xthickness                                          = 3
+  ythickness                                          = 3
 
   # Style Properties
+  GtkCheckButton::indicator-size                      = 18
+  GtkCheckButton::indicator-spacing                   = 3
+  GtkCheckMenuItem::indicator-size                    = 18
+  GtkExpander::expander-size                          = 18
+  GtkMenu::horizontal-padding                         = 7
+  GtkMenu::vertical-padding                           = 7
+  GtkMenuBar::internal-padding                        = 2
+  GtkMenuBar::window-dragging                         = 1
+  GtkOptionMenu::indicator-spacing                    = { 10, 10, 0, 0 }
+  GtkProgressBar::min-horizontal-bar-height           = 14
+  GtkProgressBar::min-vertical-bar-width              = 14
+  GtkRadioButton::indicator-size                      = 18
+  GtkRange::slider-width                              = 13
+  GtkScale::trough-side-details                       = 1
+  GtkScrollbar::activate-slider                       = 1
+  GtkScrollbar::has-backward-stepper                  = 0  
+  GtkScrollbar::has-forward-stepper                   = 0
+  GtkScrollbar::min-slider-length                     = 32
+  GtkScrollbar::trough-border                         = 0
+  GtkScrolledWindow::scrollbar-spacing                = 2
+  GtkScrolledWindow::scrollbars-within-bevel          = 0
+  GtkSeparatorMenuItem::horizontal-padding            = 1
+  GtkSeparatorMenuItem::wide-separators               = 0
+  GtkToolbar::internal-padding                        = 2
+  GtkToolbar::window-dragging                         = 1
+  GtkToolButton::icon-spacing                         = 4
+  GtkTreeView::horizontal-separator                   = 4
+  GtkTreeView::vertical-separator                     = 4
+  GtkWidget::focus-line-width                         = 0
+  GtkWidget::new-tooltip-style                        = 1
+  GtkWidget::tooltip-radius                           = 3
   # GtkButton::child-displacement-y                   = 0
   # GtkButton::default-border                         = { 0, 0, 0, 0 }
   # GtkButton::default-outside_border                 = { 0, 0, 0, 0 }
-  GtkCheckButton::indicator_size                    = 18
-  GtkCheckButton::indicator_spacing                 = 3
-  GtkCheckMenuItem::indicator_size                  = 18
-  GtkExpander::expander-size                        = 11
-  GtkMenu::horizontal-padding                       = 7
-  GtkMenu::vertical-padding                         = 7
-  GtkMenuBar::internal-padding                      = 4
-  GtkMenuBar::window-dragging                       = 1
-  # GtkOptionMenu::indicator_spacing                  = { 8, 2, 0, 0 }
-  GtkProgressBar::min-horizontal-bar-height         = 14
-  GtkProgressBar::min-vertical-bar-width            = 14
-  GtkRadioButton::indicator_size                    = 18
-  GtkRange::slider-width                            = 13
-  GtkScale::trough-side-details                     = 1
-  GtkScrollbar::activate-slider                     = 1
-  GtkScrollbar::has-backward-stepper                = 0  
-  GtkScrollbar::has-forward-stepper                 = 0
-  GtkScrollbar::min-slider-length                   = 32
-  GtkScrollbar::trough-border                       = 0
-  GtkScrolledWindow::scrollbar-spacing              = 2
-  GtkScrolledWindow::scrollbars-within-bevel        = 0
-  GtkSeparatorMenuItem::horizontal-padding          = 1
-  # GtkSeparatorMenuItem::separator-height            = 3
-  GtkSeparatorMenuItem::wide-separators             = 0
-  GtkToolbar::internal-padding                      = 4
-  GtkToolbar::window-dragging                       = 1
-  GtkToolButton::icon-spacing                       = 4
-  # GtkTreeView::allow-rules                          = 1
   # GtkTreeView::even-row-color                       = @base_color
-  # GtkTreeView::expander-size                        = 11
-  GtkTreeView::horizontal-separator                 = 4
   # GtkTreeView::odd-row-color                        = mix(0.5, @bg_color, @base_color)
-  # GtkTreeView::row_ending_details                   = 0
-  GtkTreeView::vertical-separator                   = 4
-  GtkWidget::focus-line-width                       = 0
-  GtkWidget::new-tooltip-style                      = 1
+  # GtkTreeView::row-ending-details                   = 0
   # GtkWidget::tooltip-alpha                          = 235
-  GtkWidget::tooltip-radius                         = 3
 
   engine "murrine" {
-    animation                                       = FALSE
-    arrowstyle                                      = 0                     # 0 = normal arrows, 1 = filled arrows      
-    colorize_scrollbar                              = FALSE     
-    comboboxstyle                                   = 0                     # 0 = normal combobox, 1 = colorized combobox below arrow       
-    expanderstyle                                   = 2
-    # focus_color                                     = @progress_fill
-    # focusstyle                                      = 3
-    glazestyle                                      = 4                     # 0 = flat highlight, 1 = curved highlight, 2 = concave style, 3 = top curved highlight, 4 = beryl highlight
-    gradient_shades                                 = { 1.0, 1.0, 1.0, 1.0 }
-    handlestyle                                     = 0
-    highlight_shade                                 = 1.0                   # set highlight amount for buttons or widgets
-    lightborder_shade                               = 1.4                   # sets lightborder amount for buttons or widgets
-    lightborderstyle                                = 0                     # 0 = lightborder on top side, 1 = lightborder on all sides
-    listviewheaderstyle                             = 0                     # 0 = flat, 1 = glassy, 2 = raised
-    listviewstyle                                   = 1                     # 0 = nothing, 1 = dotted
-    menubaritemstyle                                = 0                     # 0 = menuitem look, 1 = button look
-    menubarstyle                                    = 0                     # 0 = flat, 1 = glassy, 2 = gradient, 3 = striped
-    menuitemstyle                                   = 0                     # 0 = flat, 1 = glassy, 2 = striped
-    menustyle                                       = 0                     # 0 = no vertical menu stripe, 1 = display vertical menu stripe
-    prelight_shade                                  = 1.0                   # shade level for scrollbar's slider, comboboxstyle(1), and prelight state with gradient_colors     
-    progressbarstyle                                = 0                     # 0 = nothing, 1 = stripes, 2 = lines
-    reliefstyle                                     = 0                     # 0 = flat, 1 = inset, 2 = shadow
-    rgba                                            = FALSE                 # FALSE = disabled, TRUE = enabled
-    roundness                                       = 3                     # 0 = squared, 1 = old default, more will increase roundness
-    scrollbarstyle                                  = 0                     # 0 = nothing, 1 = circles, 2 = handles, 3 = diagonal stripes, 4 = diagonal stripes and handles, 5 = horizontal stripes, 6 = horizontal stripes and handles
-    separatorstyle                                  = 0                     # 0 = Hard seperators 1 = Smooth seperators
-    shadow_shades                                   = { 0.6, 0.6 }          # gradient for shadows.     
-    sliderstyle                                     = 0                     # 0 = nothing added, 1 = handles
-    stepperstyle                                    = 0                     # 0 = standard, 1 = integrated stepper handles, 2 = unknown
-    textstyle                                       = 0                     # 0 = normal text, 1 = inset        
-    toolbarstyle                                    = 0                     # 0 = flat, 1 = glassy, 2 = gradient        
-    trough_border_shades                            = { 1.0, 1.0 }
-    trough_shades                                   = { 1.0, 1.0 }          # draw gradient on trough of GtkScrollbar and GtkProgressbar
+    animation                                         = FALSE
+    arrowstyle                                        = 2                     # 0 = normal arrows, 1 = filled arrows      
+    colorize_scrollbar                                = TRUE     
+    comboboxstyle                                     = 0                     # 0 = normal combobox, 1 = colorized combobox below arrow       
+    expanderstyle                                     = 2
+    glazestyle                                        = 4                     # 0 = flat highlight, 1 = curved highlight, 2 = concave style, 3 = top curved highlight, 4 = beryl highlight
+    gradient_shades                                   = { 1.0, 1.0, 1.0, 1.0 }
+    handlestyle                                       = 0
+    highlight_shade                                   = 1.0                   # set highlight amount for buttons or widgets
+    lightborder_shade                                 = 1.4                   # sets lightborder amount for buttons or widgets
+    lightborderstyle                                  = 0                     # 0 = lightborder on top side, 1 = lightborder on all sides
+    listviewheaderstyle                               = 0                     # 0 = flat, 1 = glassy, 2 = raised
+    listviewstyle                                     = 0                     # 0 = nothing, 1 = dotted
+    menubaritemstyle                                  = 0                     # 0 = menuitem look, 1 = button look
+    menubarstyle                                      = 0                     # 0 = flat, 1 = glassy, 2 = gradient, 3 = striped
+    menuitemstyle                                     = 0                     # 0 = flat, 1 = glassy, 2 = striped
+    menustyle                                         = 0                     # 0 = no vertical menu stripe, 1 = display vertical menu stripe
+    prelight_shade                                    = 1.0                   # shade level for scrollbar's slider, comboboxstyle(1), and prelight state with gradient_colors     
+    progressbarstyle                                  = 0                     # 0 = nothing, 1 = stripes, 2 = lines
+    reliefstyle                                       = 0                     # 0 = flat, 1 = inset, 2 = shadow
+    rgba                                              = FALSE                 # FALSE = disabled, TRUE = enabled
+    roundness                                         = 3                     # 0 = squared, 1 = old default, more will increase roundness
+    scrollbarstyle                                    = 0                     # 0 = nothing, 1 = circles, 2 = handles, 3 = diagonal stripes, 4 = diagonal stripes and handles, 5 = horizontal stripes, 6 = horizontal stripes and handles
+    separatorstyle                                    = 0                     # 0 = Hard seperators 1 = Smooth seperators
+    shadow_shades                                     = { 0.6, 0.6 }          # gradient for shadows.     
+    sliderstyle                                       = 0                     # 0 = nothing added, 1 = handles
+    stepperstyle                                      = 0                     # 0 = standard, 1 = integrated stepper handles, 2 = unknown
+    textstyle                                         = 0                     # 0 = normal text, 1 = inset        
+    toolbarstyle                                      = 0                     # 0 = flat, 1 = glassy, 2 = gradient        
+    trough_border_shades                              = { 1.0, 1.0 }
+    trough_shades                                     = { 1.0, 1.0 }          # draw gradient on trough of GtkScrollbar and GtkProgressbar
   }
 }
 
 style "Button" {
-  bg[NORMAL]                                        = @bg_button
-  bg[PRELIGHT]                                      = @bg_button_hover
-  fg[PRELIGHT]                                      = @fg_light
+  bg[NORMAL]                                          = @bg_button
+
+  bg[PRELIGHT]                                        = @bg_button_hover
+  fg[PRELIGHT]                                        = @fg_light
 }
 
 style "TreeView__header" {
-  bg[NORMAL]                                        = @bg_light
+  bg[NORMAL]                                          = @bg_light
 }
 
 style "Notebook" {
-  bg[ACTIVE]                                        = @bg_medium
-  bg[NORMAL]                                        = @bg_medium
-  bg[SELECTED]                                      = @bg_tab_selected
+  bg[ACTIVE]                                          = @bg_medium
+  bg[NORMAL]                                          = @bg_medium
+  bg[SELECTED]                                        = @bg_tab_selected
 
-  fg[ACTIVE]                                        = @fg_deactivated
+  fg[ACTIVE]                                          = @fg_deactivated
 
   engine "murrine" {
-    focus_color                                     = @bg_tab_selected
+    focus_color                                       = @bg_tab_selected
   }
 }
 
 style "Entry" {
-  base[NORMAL]                                      = @base_deactivated
+  base[NORMAL]                                        = @base_deactivated
 }
 
 style "Menu" {
-  bg[NORMAL]                                        = @base_deactivated
-  bg[SELECTED]                                      = @bg_dark
+  bg[NORMAL]                                          = @base_deactivated
+  bg[SELECTED]                                        = @bg_dark
+
+  text[PRELIGHT]                                      = @fg_hover # combobox menu
 }
 
 style "MenuBar" {
-  bg[NORMAL]                                        = @base_deactivated
-  bg[SELECTED]                                      = @bg_dark
+  bg[SELECTED]                                        = @bg_dark
 }
 
 style "CheckButton" {
-  bg[PRELIGHT]                                      = @bg_dark
-  fg[PRELIGHT]                                      = @fg_hover
+  base[ACTIVE]                                        = @base_deactivated
+  base[NORMAL]                                        = @base_deactivated
+  base[SELECTED]                                      = @base_deactivated
+
+  bg[PRELIGHT]                                        = @bg_dark
+
+  fg[ACTIVE]                                          = @fg_entry_border
+  fg[INSENSITIVE]                                     = @fg_entry_border
+  fg[NORMAL]                                          = @fg_entry_border
+  fg[PRELIGHT]                                        = @fg_entry_border
+
+  text[ACTIVE]                                        = @link
+  text[INSENSITIVE]                                   = @fg_deactivated
+  text[NORMAL]                                        = @link
+  text[PRELIGHT]                                      = @link
+
+  xthickness                                          = 1
+  ythickness                                          = 1
+
+  engine "adwaita" {}
 }
 
-class "GtkWidget"                                                           style "default"
+style "CheckButton__label" {
+  fg[PRELIGHT]                                        = @fg_hover
+}
 
-widget_class "*<GtkButton>*"                                                style "Button"
+style "ComboBox__arrow" {
+  GtkArrow::arrow-scaling                             = 0.4
 
-widget_class "*<GtkEntry>*"                                                            style "Entry"
-# class "GtkFrame"                                                            style "frame"
-# class "GtkOldEditable"                                                      style "Entry"
-# class "GtkProgressBar"                                                      style "progressbar"
-# class "GtkRange"                                                            style "range"
-# class "GtkScrollbar"                                                        style "scrollbar"
-# class "GtkScrolledWindow"                                                   style "scrolled_window"
-# class "GtkSpinButton"                                                       style "spinbutton"
-# class "GtkTreeView"                                                         style "treeview"
+  engine "adwaita" {}
+}
 
-widget_class "*<GtkCheckButton>*"                                           style "CheckButton"
-# widget_class "*<GtkComboBox>"                                               style "ComboBox"
-# widget_class "*<GtkComboBox>*<GtkButton>"                                   style "combobox_button"
-# widget_class "*<GtkComboBox>*<GtkButton>*<GtkArrow>"                        style "combobox_button_arrow"
-# widget_class "*<GtkComboBox>*<GtkSeparator>"                                style "combobox_separator"
-# widget_class "*<GtkComboBoxEntry>*<GtkButton>"                              style "combobox_entry_button"
-# widget_class "*<GtkComboBoxEntry>*<GtkEntry>"                               style "combobox_entry"
-# widget_class "*<GtkFileChooserDefault>*<GtkToolbar>"                        style "inline_toolbar"
-widget_class "*<GtkMenu>*"                                                  style "Menu"
-widget_class "*<GtkMenuBar>*"                                               style "MenuBar"
-# widget_class "*<GtkMenuItem>*"                                              style "menu_item"
-# widget_class "*<GtkNotebook>*<GtkScrolledWindow>*<GtkViewport>"             style "notebook_viewport"
-widget_class "*<GtkTreeView>*<GtkButton>*"                                  style "TreeView__header"
-widget_class "*<GtkNotebook>*"                                              style "Notebook"
+style "Separator" {
+  bg[NORMAL]                                          = @fg_entry_border
+}
+
+style "Statusbar" {
+  bg[NORMAL]                                          = @base_deactivated
+
+  fg[NORMAL]                                          = @fg_deactivated
+}
+
+style "Toolbar__button" {
+  bg[ACTIVE]                                          = @bg_light
+  bg[PRELIGHT]                                        = @bg_hover
+}
+
+style "Toolbar" {
+  fg[NORMAL]                                          = @test_1
+}
+
+style "SpinButton" {
+  bg[NORMAL]                                          = @bg_button
+  bg[PRELIGHT]                                        = @bg_button_hover
+
+  fg[PRELIGHT]                                        = @fg_light
+
+  engine "murrine"{
+    border_shades                                     = { 0.0, 0.0 }
+  }
+}
+
+style "ProgressBar" {
+  fg[PRELIGHT]                                        = @fg_progress_fill
+}
 
 
-# # Entries in notebooks draw with notebook's base color, but not if there's
-# # something else in the middle that draws gray again
-# widget_class "*<GtkNotebook>*<GtkComboBoxEntry>*<GtkEntry>"                 style "notebook_combobox_entry"
-# widget_class "*<GtkNotebook>*<GtkEntry>"                                    style "notebook_entry"
-# widget_class "*<GtkNotebook>*<GtkEventBox>*<GtkComboBoxEntry>*<GtkEntry>"   style "combobox_entry"
-# widget_class "*<GtkNotebook>*<GtkEventBox>*<GtkEntry>"                      style "Entry"
+class "GtkWidget"                                     style "default"
 
-# # GTK tooltips
-# widget "gtk-tooltip*"                                                       style "tooltips"
+widget_class "*<GtkButton>*"                          style "Button"
+widget_class "*<GtkCheckButton>.<GtkLabel>*"          style "CheckButton__label"
+widget_class "*<GtkCheckButton>"                      style "CheckButton"
+widget_class "*<GtkComboBox>*<GtkButton>*<GtkArrow>"  style "ComboBox__arrow"
+widget_class "*<GtkEntry>*"                           style "Entry"
+widget_class "*<GtkMenu>*"                            style "Menu"
+widget_class "*<GtkMenuBar>*"                         style "MenuBar"
+widget_class "*<GtkNotebook>*"                        style "Notebook"
+widget_class "*<GtkProgressBar>*"                     style "ProgressBar"
+widget_class "*<GtkSpinButton>"                       style "SpinButton"
+widget_class "*<GtkStatusbar>*<GtkFrame>*"            style "Statusbar"
+widget_class "*<GtkToolbar>"                          style "Toolbar"
+widget_class "*<GtkToolbar>*<GtkButton>*"             style "Toolbar__button"
+widget_class "*<GtkTreeView>*<GtkButton>*"            style "TreeView__header"
