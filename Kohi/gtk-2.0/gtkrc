@@ -1,31 +1,35 @@
-gtk-color-scheme                = "base_color: #242119"
-gtk-color-scheme                = "bg_color: #1E1C14"
-gtk-color-scheme                = "button_bg: #8C9440"
-gtk-color-scheme                = "button_fg: #F4F4F4"
-gtk-color-scheme                = "button_hover_bg: #A8B24D"
-gtk-color-scheme                = "button_insensitive_bg: #4E4F29"
-gtk-color-scheme                = "dark_sidebar_bg: #FF0000"
-gtk-color-scheme                = "entry_bg: #16150E"
-gtk-color-scheme                = "entry_border: #463A31"
-gtk-color-scheme                = "fg_color: #DDDDDD"
-gtk-color-scheme                = "insensitive_bg_color: #FF0000"
-gtk-color-scheme                = "insensitive_fg_color: #A7A7A6"
-gtk-color-scheme                = "link_color: #B5BD68"
-gtk-color-scheme                = "menu_bg: #16150E"
-gtk-color-scheme                = "menu_fg: #DDDDDD"
-gtk-color-scheme                = "notebook_bg: #FF0000"
-gtk-color-scheme                = "progress_fill: #B5BD68"
-gtk-color-scheme                = "scrollbar_active: #8A7F58"
-gtk-color-scheme                = "scrollbar: #C3AC81"
-gtk-color-scheme                = "selected_bg_color: #8E7B6B"
-gtk-color-scheme                = "selected_fg_color: #16150E"
-gtk-color-scheme                = "test_color: #FF0000"
-gtk-color-scheme                = "text_color: #DDDDDD"
-gtk-color-scheme                = "titlebar_bg_color: #242119"
-gtk-color-scheme                = "titlebar_fg_color: #F4F4F4"
-gtk-color-scheme                = "tooltip_bg_color: #16150E"
-gtk-color-scheme                = "tooltip_fg_color: #DDDDDD"
-gtk-color-scheme                = "tree_header_bg: #3A3128"
+gtk-color-scheme                = "test_1: #FF0000" # red
+gtk-color-scheme                = "test_2: #00FF00" # green
+gtk-color-scheme                = "test_3: #0000FF" # blue
+gtk-color-scheme                = "test_4: #FFFF00" # yellow
+gtk-color-scheme                = "test_5: #00FFFF" # cyan
+
+
+gtk-color-scheme                = "bg_dark: #1E1C14"
+gtk-color-scheme                = "bg_medium: #242119"
+gtk-color-scheme                = "bg_light: #3A3128"
+gtk-color-scheme                = "bg_deactivated: #4E4F29"
+gtk-color-scheme                = "bg_hover: #18160F"
+
+gtk-color-scheme                = "base_deactivated: #16150E"
+gtk-color-scheme                = "base_active: #493D33"
+gtk-color-scheme                = "base_selected: #4F453A"
+
+gtk-color-scheme                = "fg_normal: #DDDDDD"
+gtk-color-scheme                = "fg_light: #F4F4F4"
+gtk-color-scheme                = "fg_deactivated: #A7A7A6"
+gtk-color-scheme                = "fg_hover: #B5BD68"
+
+gtk-color-scheme                = "bg_button: #8C9440"
+gtk-color-scheme                = "bg_button_hover: #A8B24D"
+
+gtk-color-scheme                = "bg_progress_fill: #B5BD68"
+gtk-color-scheme                = "fg_progress_fill: #16150E"
+
+gtk-color-scheme                = "link: #B5BD68"
+gtk-color-scheme                = "link_visited: #D0DA78"
+
+gtk-color-scheme                = "bg_tab_selected: #463A31"
 
 
 gtk-auto-mnemonics              = 1
@@ -34,5 +38,5 @@ gtk-icon-sizes                  = "gtk-button=16,16"
 gtk-primary-button-warps-slider = 1
 gtk-toolbar-style               = 0  
 
+
 include "main.rc"
-include "menubar.rc"
