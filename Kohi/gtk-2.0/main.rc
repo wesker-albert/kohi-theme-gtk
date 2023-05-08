@@ -55,12 +55,12 @@ style "default" {
   GtkToolButton::icon-spacing                         = 4
   GtkTreeView::even-row-color                         = @brown_medium
   GtkTreeView::horizontal-separator                   = 4
-  GtkTreeView::odd-row-color                          = mix(0.6, @brown_medium, @brown_dark)
+  GtkTreeView::odd-row-color                          = mix(0.3, @brown_medium, @brown_dark)
+  GtkTreeView::row-ending-details                     = 0
   GtkTreeView::vertical-separator                     = 4
   GtkWidget::focus-line-width                         = 0
   GtkWidget::new-tooltip-style                        = 1
   GtkWidget::tooltip-radius                           = 3
-  GtkTreeView::row-ending-details                     = 1
 
   GnomeHRef::link_color                               = @green_lightest
   GtkHTML::link-color                                 = @green_lightest
@@ -135,6 +135,7 @@ style "Entry" {
 }
 
 style "Menu" {
+  bg[INSENSITIVE]                                     = @black_dark
   bg[NORMAL]                                          = @black_dark
   bg[SELECTED]                                        = @brown_dark
 
@@ -142,7 +143,7 @@ style "Menu" {
 }
 
 style "MenuBar" {
-  bg[SELECTED]                                        = @brown_dark
+  bg[SELECTED]                                        = @black
 }
 
 style "CheckButton" {
