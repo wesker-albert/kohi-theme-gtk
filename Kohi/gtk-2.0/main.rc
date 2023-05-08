@@ -23,7 +23,6 @@ style "default" {
   text[PRELIGHT]                                      = @white
   text[SELECTED]                                      = @white
 
-  # Style Properties
   xthickness                                          = 3
   ythickness                                          = 3
 

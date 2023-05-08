@@ -1,11 +1,3 @@
-# Color schemes (for testing)
-gtk-color-scheme                = "test_1: #FF0000" # red
-gtk-color-scheme                = "test_2: #00FF00" # green
-gtk-color-scheme                = "test_3: #0000FF" # blue
-gtk-color-scheme                = "test_4: #FFFF00" # yellow
-gtk-color-scheme                = "test_5: #00FFFF" # cyan
-
-# Color schemes
 gtk-color-scheme                = "black_dark: #16150E"
 gtk-color-scheme                = "black: #18160F"
 gtk-color-scheme                = "brown_dark: #1E1C14"
@@ -23,8 +15,6 @@ gtk-color-scheme                = "green_lightest: #B5BD68"
 gtk-color-scheme                = "green_medium: #8C9440"
 gtk-color-scheme                = "white: #F4F4F4"
 
-
-# Theme settings
 gtk-auto-mnemonics              = 1
 gtk-button-images               = 0
 gtk-primary-button-warps-slider = 1
