@@ -6,33 +6,23 @@ gtk-color-scheme                = "test_4: #FFFF00" # yellow
 gtk-color-scheme                = "test_5: #00FFFF" # cyan
 
 # Color schemes
-gtk-color-scheme                = "bg_dark: #1E1C14"
-gtk-color-scheme                = "bg_medium: #242119"
-gtk-color-scheme                = "bg_light: #3A3128"
-gtk-color-scheme                = "bg_deactivated: #4E4F29"
-gtk-color-scheme                = "bg_hover: #18160F"
+gtk-color-scheme                = "black_dark: #16150E"
+gtk-color-scheme                = "black: #18160F"
+gtk-color-scheme                = "brown_dark: #1E1C14"
+gtk-color-scheme                = "brown_light: #3A3128"
+gtk-color-scheme                = "brown_lightest: #493D33"
+gtk-color-scheme                = "brown_medium: #242119"
+gtk-color-scheme                = "caramel: #463A31"
+gtk-color-scheme                = "cream: #C3AC81"
+gtk-color-scheme                = "every_day_im_hustling: #4F453A"
+gtk-color-scheme                = "gray_light: #DDDDDD"
+gtk-color-scheme                = "gray: #A7A7A6"
+gtk-color-scheme                = "green_dark: #4E4F29"
+gtk-color-scheme                = "green_light: #A8B24D"
+gtk-color-scheme                = "green_lightest: #B5BD68"
+gtk-color-scheme                = "green_medium: #8C9440"
+gtk-color-scheme                = "white: #F4F4F4"
 
-gtk-color-scheme                = "base_deactivated: #16150E"
-gtk-color-scheme                = "base_active: #493D33"
-gtk-color-scheme                = "base_selected: #4F453A"
-
-gtk-color-scheme                = "fg_normal: #DDDDDD"
-gtk-color-scheme                = "fg_light: #F4F4F4"
-gtk-color-scheme                = "fg_deactivated: #A7A7A6"
-gtk-color-scheme                = "fg_hover: #B5BD68"
-
-gtk-color-scheme                = "bg_button: #8C9440"
-gtk-color-scheme                = "bg_button_hover: #A8B24D"
-
-gtk-color-scheme                = "bg_progress_fill: #B5BD68"
-gtk-color-scheme                = "fg_progress_fill: #16150E"
-
-gtk-color-scheme                = "link: #B5BD68"
-gtk-color-scheme                = "link_visited: #D0DA78"
-
-gtk-color-scheme                = "bg_tab_selected: #463A31"
-
-gtk-color-scheme                = "fg_entry_border: #463A31"
 
 # Theme settings
 gtk-auto-mnemonics              = 1
