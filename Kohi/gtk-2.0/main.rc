@@ -1,0 +1,299 @@
+style "default" {
+  base[ACTIVE]                                        = @brown_lightest
+  base[INSENSITIVE]                                   = @black_dark
+  base[NORMAL]                                        = @brown_medium
+  base[PRELIGHT]                                      = @black_dark
+  base[SELECTED]                                      = @every_day_im_hustling
+
+  bg[ACTIVE]                                          = @brown_medium
+  bg[INSENSITIVE]                                     = @green_dark
+  bg[NORMAL]                                          = @brown_dark
+  bg[PRELIGHT]                                        = @black
+  bg[SELECTED]                                        = @green_lightest
+
+  fg[ACTIVE]                                          = @gray_light
+  fg[INSENSITIVE]                                     = @gray
+  fg[NORMAL]                                          = @gray_light
+  fg[PRELIGHT]                                        = @green_lightest
+  fg[SELECTED]                                        = @black_dark
+
+  text[ACTIVE]                                        = @gray_light
+  text[INSENSITIVE]                                   = @gray
+  text[NORMAL]                                        = @gray_light
+  text[PRELIGHT]                                      = @white
+  text[SELECTED]                                      = @white
+
+  xthickness                                          = 3
+  ythickness                                          = 3
+
+  GtkCheckButton::indicator-size                      = 18
+  GtkCheckButton::indicator-spacing                   = 3
+  GtkCheckMenuItem::indicator-size                    = 18
+  GtkExpander::expander-size                          = 18
+  GtkMenu::horizontal-padding                         = 7
+  GtkMenu::vertical-padding                           = 7
+  GtkMenuBar::internal-padding                        = 2
+  GtkMenuBar::window-dragging                         = 1
+  GtkOptionMenu::indicator-spacing                    = { 10, 10, 0, 0 }
+  GtkProgressBar::min-horizontal-bar-height           = 16
+  GtkProgressBar::min-vertical-bar-width              = 16
+  GtkRadioButton::indicator-size                      = 18
+  GtkRange::slider-width                              = 16
+  GtkScale::trough-side-details                       = 1
+  GtkScrollbar::activate-slider                       = 0
+  GtkScrollbar::has-backward-stepper                  = 0  
+  GtkScrollbar::has-forward-stepper                   = 0
+  GtkScrollbar::min-slider-length                     = 32
+  GtkScrollbar::trough-border                         = 0
+  GtkScrolledWindow::scrollbar-spacing                = 2
+  GtkScrolledWindow::scrollbars-within-bevel          = 0
+  GtkSeparatorMenuItem::horizontal-padding            = 1
+  GtkSeparatorMenuItem::wide-separators               = 0
+  GtkToolbar::internal-padding                        = 2
+  GtkToolbar::window-dragging                         = 1
+  GtkToolButton::icon-spacing                         = 4
+  GtkTreeView::even-row-color                         = @brown_medium
+  GtkTreeView::horizontal-separator                   = 4
+  GtkTreeView::odd-row-color                          = mix(0.3, @brown_medium, @brown_dark)
+  GtkTreeView::row-ending-details                     = 0
+  GtkTreeView::vertical-separator                     = 4
+  GtkWidget::focus-line-width                         = 0
+  GtkWidget::new-tooltip-style                        = 1
+  GtkWidget::tooltip-radius                           = 3
+
+  GnomeHRef::link_color                               = @green_lightest
+  GtkHTML::link-color                                 = @green_lightest
+  GtkIMHtml::hyperlink-color                          = @green_lightest
+  GtkIMHtmlr::hyperlink-color                         = @green_lightest
+  GtkWidget::link-color                               = @green_lightest
+  GtkWidget::visited-link-color                       = @green_lightest
+
+  engine "murrine" {
+    animation                                         = FALSE
+    arrowstyle                                        = 2
+    colorize_scrollbar                                = FALSE     
+    comboboxstyle                                     = 0
+    expanderstyle                                     = 2
+    glazestyle                                        = 4
+    gradient_shades                                   = { 1.0, 1.0, 1.0, 1.0 }
+    handlestyle                                       = 0
+    highlight_shade                                   = 1.0
+    lightborder_shade                                 = 1.4
+    lightborderstyle                                  = 0
+    listviewheaderstyle                               = 0
+    listviewstyle                                     = 0
+    menubaritemstyle                                  = 0
+    menubarstyle                                      = 0
+    menuitemstyle                                     = 0
+    menustyle                                         = 0
+    prelight_shade                                    = 1.0
+    progressbarstyle                                  = 0
+    reliefstyle                                       = 0
+    rgba                                              = FALSE
+    roundness                                         = 3
+    scrollbarstyle                                    = 0
+    separatorstyle                                    = 0
+    shadow_shades                                     = { 0.6, 0.6 }
+    sliderstyle                                       = 0
+    stepperstyle                                      = 0
+    textstyle                                         = 0
+    toolbarstyle                                      = 0
+    trough_border_shades                              = { 1.0, 1.0 }
+    trough_shades                                     = { 1.0, 1.0 }
+  }
+}
+
+style "Button" {
+  bg[NORMAL]                                          = @green_medium
+  bg[PRELIGHT]                                        = @green_light
+
+  fg[PRELIGHT]                                        = @white
+}
+
+style "TreeView__header" {
+  bg[NORMAL]                                          = @brown_light
+}
+
+style "Notebook" {
+  bg[ACTIVE]                                          = @brown_medium
+  bg[NORMAL]                                          = @brown_medium
+  bg[SELECTED]                                        = @caramel
+
+  engine "murrine" {
+    focus_color                                       = @caramel
+  }
+}
+
+style "Notebook__label" {
+  fg[ACTIVE]                                          = @gray
+  fg[NORMAL]                                          = @green_lightest
+}
+
+style "Entry" {
+  base[NORMAL]                                        = @black_dark
+}
+
+style "Menu" {
+  bg[INSENSITIVE]                                     = @black_dark
+  bg[NORMAL]                                          = @black_dark
+  bg[SELECTED]                                        = @brown_dark
+
+  text[PRELIGHT]                                      = @green_lightest # combobox menu
+}
+
+style "MenuBar" {
+  bg[SELECTED]                                        = @black
+}
+
+style "CheckButton" {
+  base[ACTIVE]                                        = @black_dark
+  base[NORMAL]                                        = @black_dark
+  base[SELECTED]                                      = @black_dark
+
+  bg[PRELIGHT]                                        = @brown_dark
+
+  fg[ACTIVE]                                          = @caramel
+  fg[INSENSITIVE]                                     = @caramel
+  fg[NORMAL]                                          = @caramel
+  fg[PRELIGHT]                                        = @caramel
+
+  text[ACTIVE]                                        = @green_lightest
+  text[INSENSITIVE]                                   = @gray
+  text[NORMAL]                                        = @green_lightest
+  text[PRELIGHT]                                      = @green_lightest
+
+  xthickness                                          = 1
+  ythickness                                          = 1
+
+  engine "adwaita" {}
+}
+
+style "CheckButton__label" {
+  fg[ACTIVE]                                          = @gray_light
+  fg[PRELIGHT]                                        = @green_lightest
+}
+
+style "ComboBox__arrow" {
+  GtkArrow::arrow-scaling                             = 0.4
+
+  engine "adwaita" {}
+}
+
+style "Separator" {
+  bg[NORMAL]                                          = @caramel
+}
+
+style "Statusbar" {
+  bg[NORMAL]                                          = @black_dark
+
+  fg[NORMAL]                                          = @gray
+}
+
+style "Toolbar__button" {
+  bg[ACTIVE]                                          = @brown_light
+  bg[PRELIGHT]                                        = @black
+}
+
+style "Toolbar" {
+  fg[NORMAL]                                          = @test_1
+}
+
+style "SpinButton" {
+  bg[NORMAL]                                          = @green_medium
+
+  fg[PRELIGHT]                                        = @white
+
+  engine "murrine"{
+    border_shades                                     = { 0.0, 0.0 }
+  }
+}
+
+style "ProgressBar" {
+  bg[ACTIVE]                                          = @black_dark #empty trough
+
+  fg[PRELIGHT]                                        = @black_dark
+
+  engine "murrine" {
+    roundness = 6
+  }
+}
+
+style "Scale" {
+  bg[ACTIVE]                                          = @black_dark # empty trough
+  bg[INSENSITIVE]                                     = mix(0.8, @brown_dark, @cream)
+  bg[NORMAL]                                          = mix(0.3, @brown_dark, @cream)
+  bg[PRELIGHT]                                        = mix(0.1, @brown_dark, @cream)
+
+  engine "murrine" {
+    roundness = 1
+  }
+}
+
+style "Scrollbar" {
+  bg[INSENSITIVE]                                     = mix(0.8, @brown_dark, @cream)
+  bg[NORMAL]                                          = mix(0.3, @brown_dark, @cream)
+  bg[PRELIGHT]                                        = mix(0.1, @brown_dark, @cream)
+}
+
+style "Button__separator" {
+  bg[NORMAL]                                          = @gray
+
+  xthickness                                          = 4
+}
+
+style "Tooltip" {
+  bg[NORMAL]                                          = @black_dark
+  bg[SELECTED]                                        = @black_dark
+
+  xthickness                                          = 8
+  ythickness                                          = 4
+}
+
+style "ToggleButton" {
+  bg[ACTIVE]                                          = mix(0.7, @cream, @green_medium)
+
+  fg[ACTIVE]                                          = @black_dark
+}
+
+style "LinkButton" {
+  bg[PRELIGHT] = @black
+}
+
+
+class "GtkWidget"                                     style "default"
+
+class "GtkEntry"                                      style "Entry"
+class "GtkProgressBar"                                style "ProgressBar"
+class "GtkScale"                                      style "Scale"
+class "GtkScrollbar"                                  style "Scrollbar"
+class "GtkSpinButton"                                 style "SpinButton"
+class "GtkToolbar"                                    style "Toolbar"
+
+widget "gtk-tooltip*"                                 style "Tooltip"
+
+widget_class "*.<GtkButton>"                          style "Button"
+widget_class "*.<GtkButton>*<GtkArrow>"               style "Button"
+widget_class "*.<GtkButton>*<GtkLabel>"               style "Button"
+widget_class "*.<GtkFileChooserButton>*<GtkLabel>"    style "Button"
+widget_class "*.<GtkFontButton>*<GtkLabel>"           style "Button"
+widget_class "*.<GtkLinkButton>"                      style "LinkButton"
+widget_class "*.<GtkToggleButton>"                    style "ToggleButton"
+widget_class "*.<GtkToggleButton>.<GtkLabel>"         style "ToggleButton"
+widget_class "*.<GtkButton>*<GtkSeparator>"           style "Button__separator"
+
+widget_class "*.<GtkCheckButton>.<GtkLabel>*"         style "CheckButton__label"
+widget_class "*.<GtkCheckButton>"                     style "CheckButton"
+widget_class "*.<GtkToolbar>*<GtkButton>"             style "Toolbar__button"
+widget_class "*.<GtkToolbar>*<GtkToggleButton>"       style "Toolbar__button"
+
+widget_class "*.<GtkComboBox>.<GtkButton>*<GtkArrow>" style "ComboBox__arrow"
+widget_class "*.<GtkMenu>*"                           style "Menu"
+widget_class "*.<GtkMenuBar>*"                        style "MenuBar"
+widget_class "*.<GtkNotebook>"                        style "Notebook"
+widget_class "*.<GtkNotebook>.<GtkLabel>"             style "Notebook__label"
+widget_class "*.<GtkStatusbar>.<GtkFrame>"            style "Statusbar"
+
+widget_class "*.<GtkTreeView>.<GtkButton>"            style "TreeView__header"
+widget_class "*.<GtkCTree>.<GtkButton>"               style "TreeView__header"
+widget_class "*.<GtkList>.<GtkButton>"                style "TreeView__header"
+widget_class "*.<GtkCList>.<GtkButton>"               style "TreeView__header"

@@ -1,6 +1,8 @@
 # kohi-theme-gtk
 
-A dark roasted theme for GTK+ 2/3/4
+A dark roasted theme for GTK+ 2/3
+
+Intended to be used alongside a tiling windows manager, without window titlebars. Thus, some decorations may be missing.
 
 ## Installation
 
