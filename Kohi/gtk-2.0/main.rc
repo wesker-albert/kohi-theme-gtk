@@ -194,10 +194,6 @@ style "Toolbar__button" {
   bg[PRELIGHT]                                        = @black
 }
 
-style "Toolbar" {
-  fg[NORMAL]                                          = @test_1
-}
-
 style "SpinButton" {
   bg[NORMAL]                                          = @green_medium
 
@@ -214,7 +210,7 @@ style "ProgressBar" {
   fg[PRELIGHT]                                        = @black_dark
 
   engine "murrine" {
-    roundness = 6
+    roundness                                         = 6
   }
 }
 
@@ -225,7 +221,7 @@ style "Scale" {
   bg[PRELIGHT]                                        = mix(0.1, @brown_dark, @cream)
 
   engine "murrine" {
-    roundness = 1
+    roundness                                         = 1
   }
 }
 
@@ -256,7 +252,7 @@ style "ToggleButton" {
 }
 
 style "LinkButton" {
-  bg[PRELIGHT] = @black
+  bg[PRELIGHT]                                        = @black
 }
 
 
@@ -267,7 +263,6 @@ class "GtkProgressBar"                                style "ProgressBar"
 class "GtkScale"                                      style "Scale"
 class "GtkScrollbar"                                  style "Scrollbar"
 class "GtkSpinButton"                                 style "SpinButton"
-class "GtkToolbar"                                    style "Toolbar"
 
 widget "gtk-tooltip*"                                 style "Tooltip"
 
