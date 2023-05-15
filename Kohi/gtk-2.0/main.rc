@@ -108,6 +108,12 @@ style "Button" {
   bg[PRELIGHT]                                        = @green_light
 
   fg[PRELIGHT]                                        = @white
+
+  xthickness                                          = 10
+}
+
+style "Button__unpadded" = "Button" {
+  xthickness                                          = 3
 }
 
 style "TreeView__header" {
@@ -189,13 +195,9 @@ style "Statusbar" {
   fg[NORMAL]                                          = @gray
 }
 
-style "Toolbar__button" {
+style "Toolbar__button" = "Button__unpadded"{
   bg[ACTIVE]                                          = @brown_light
   bg[PRELIGHT]                                        = @black
-}
-
-style "Toolbar" {
-  fg[NORMAL]                                          = @test_1
 }
 
 style "SpinButton" {
@@ -214,7 +216,7 @@ style "ProgressBar" {
   fg[PRELIGHT]                                        = @black_dark
 
   engine "murrine" {
-    roundness = 6
+    roundness                                         = 6
   }
 }
 
@@ -225,7 +227,7 @@ style "Scale" {
   bg[PRELIGHT]                                        = mix(0.1, @brown_dark, @cream)
 
   engine "murrine" {
-    roundness = 1
+    roundness                                         = 1
   }
 }
 
@@ -256,7 +258,7 @@ style "ToggleButton" {
 }
 
 style "LinkButton" {
-  bg[PRELIGHT] = @black
+  bg[PRELIGHT]                                        = @black
 }
 
 
@@ -267,7 +269,6 @@ class "GtkProgressBar"                                style "ProgressBar"
 class "GtkScale"                                      style "Scale"
 class "GtkScrollbar"                                  style "Scrollbar"
 class "GtkSpinButton"                                 style "SpinButton"
-class "GtkToolbar"                                    style "Toolbar"
 
 widget "gtk-tooltip*"                                 style "Tooltip"
 
@@ -280,6 +281,7 @@ widget_class "*.<GtkLinkButton>"                      style "LinkButton"
 widget_class "*.<GtkToggleButton>"                    style "ToggleButton"
 widget_class "*.<GtkToggleButton>.<GtkLabel>"         style "ToggleButton"
 widget_class "*.<GtkButton>*<GtkSeparator>"           style "Button__separator"
+widget_class "*.<GtkComboBox>.<GtkButton>"            style "Button__unpadded"
 
 widget_class "*.<GtkCheckButton>.<GtkLabel>*"         style "CheckButton__label"
 widget_class "*.<GtkCheckButton>"                     style "CheckButton"
