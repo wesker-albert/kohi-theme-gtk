@@ -108,6 +108,12 @@ style "Button" {
   bg[PRELIGHT]                                        = @green_light
 
   fg[PRELIGHT]                                        = @white
+
+  xthickness                                          = 10
+}
+
+style "Button__unpadded" = "Button" {
+  xthickness                                          = 3
 }
 
 style "TreeView__header" {
@@ -189,7 +195,7 @@ style "Statusbar" {
   fg[NORMAL]                                          = @gray
 }
 
-style "Toolbar__button" {
+style "Toolbar__button" = "Button__unpadded"{
   bg[ACTIVE]                                          = @brown_light
   bg[PRELIGHT]                                        = @black
 }
@@ -275,6 +281,7 @@ widget_class "*.<GtkLinkButton>"                      style "LinkButton"
 widget_class "*.<GtkToggleButton>"                    style "ToggleButton"
 widget_class "*.<GtkToggleButton>.<GtkLabel>"         style "ToggleButton"
 widget_class "*.<GtkButton>*<GtkSeparator>"           style "Button__separator"
+widget_class "*.<GtkComboBox>.<GtkButton>"            style "Button__unpadded"
 
 widget_class "*.<GtkCheckButton>.<GtkLabel>*"         style "CheckButton__label"
 widget_class "*.<GtkCheckButton>"                     style "CheckButton"
